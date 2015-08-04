@@ -21,7 +21,7 @@ x = float(x)
 # Notice that the max that the ans can be is the square root of x, since we are depicting
 # the square root here we will avoid using the square root function itself
 # Here's what I mean: epsilon <= x - ans*ans if epsilo is zero, then ans^2 <= x
-high = x 
+high = max (x,1)
 
 while epsilon <= abs(x-(ansB*ansB)):
     ansB = (low + high) / 2
